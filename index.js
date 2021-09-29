@@ -1,6 +1,5 @@
 ////////////////////////////////////////////
 const Discord = require("discord.js");
-const tokenfile = require("./tokenfile.json");
 const botconfig = require("./botconfig.json");
 const ascii = require("ascii-table");
 const { readdirSync, fstat } = require("fs");
@@ -297,4 +296,4 @@ if(cmd === `${prefix}clear`){
 
 
 
-bot.login(tokenfile.token);
+bot.login(process.env.BOT_TOKEN);
